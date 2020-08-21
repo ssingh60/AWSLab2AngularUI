@@ -13,7 +13,7 @@ export class WebService {
     private myMethodSubject = new Subject<any>();
 
     constructor(private http: HttpClient) {
-      this.ROOT_URL = "http://localhost:5000/predict";
+      this.ROOT_URL = "http://localhost:8000/predict";
         this.post$ = this.myMethodSubject.asObservable();
     }
     arrBirds: string [];
